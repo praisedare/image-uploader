@@ -1,12 +1,13 @@
+
 const ImageUploadComponent = (() => {
     function createElem() {
         let $elem = document.createElement('div');
         $elem.className = 'img-upload-component';
-        $elem.style = 'position: relative; display: inline-block; width: 100%; max-width: 250px; height: 240px; border: 1px solid lightgrey; border-radius: 2px;';
+        $elem.style = 'position: relative; display: inline-block; width: 100%; max-width: 250px; border: 1px solid lightgrey; border-radius: 2px;';
         $elem.innerHTML = `
-            <div class="image-area" style="position: relative; height: 100%; overflow: hidden;">
+            <div class="image-area" style="position: relative; height: 200px; overflow: hidden;">
                 <button class="close-btn" type="button" style="position: absolute; right: 5px; top: 5px; z-index: 2; border: 0; background-color: #e60000; color: white; font-weight: bolder; border-radius: 3px; line-height: 1em; font-size: 15px; font-family: monospace; height: 24px; width: 24px;">&times;</button>
-                <div class="image-container" style="position: absolute; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                <div class="image-container" style="position: absolute; width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;">
                     <img class="img-preview" style="width: 100%; height: 100%; object-fit: contain; padding: 10px; box-sizing: border-box;"/>
                 </div>
                 <input type="file" style="display: none;"/>
